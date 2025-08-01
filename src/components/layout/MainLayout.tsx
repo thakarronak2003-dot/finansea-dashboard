@@ -3,6 +3,7 @@ import { AppSidebar } from "./AppSidebar";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { User, Settings, LogOut } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -34,6 +35,8 @@ export function MainLayout({ children }: MainLayoutProps) {
             </div>
             
             <div className="flex items-center space-x-4">
+              <ThemeToggle />
+              
               <div className="text-right">
                 <div className="text-sm font-medium">Total Portfolio</div>
                 <div className="text-lg font-bold text-profit">$487,342.18</div>
