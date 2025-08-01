@@ -2,39 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Financial Trading Platform Design System - Professional Dark Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core financial colors */
+    --background: 220 13% 9%;
+    --foreground: 220 14% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 13% 12%;
+    --card-foreground: 220 14% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 13% 12%;
+    --popover-foreground: 220 14% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary brand - professional blue */
+    --primary: 221 83% 53%;
+    --primary-foreground: 220 14% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 215 28% 17%;
+    --secondary-foreground: 220 14% 95%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 215 28% 17%;
+    --muted-foreground: 217 10% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 215 28% 17%;
+    --accent-foreground: 220 14% 95%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Financial status colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 14% 95%;
+    
+    --success: 142 76% 36%;
+    --success-foreground: 220 14% 95%;
+    
+    --warning: 38 92% 50%;
+    --warning-foreground: 220 13% 9%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 215 28% 17%;
+    --input: 215 28% 17%;
+    --ring: 221 83% 53%;
+
+    /* Trading specific colors */
+    --buy-color: 142 76% 36%;
+    --sell-color: 0 84% 60%;
+    --profit-color: 142 76% 36%;
+    --loss-color: 0 84% 60%;
+    --neutral-color: 217 10% 65%;
+
+    /* Chart colors */
+    --chart-primary: 221 83% 53%;
+    --chart-secondary: 142 76% 36%;
+    --chart-accent: 262 83% 58%;
+    --chart-grid: 215 28% 20%;
+
+    /* Glass effect */
+    --glass-bg: 220 13% 12% / 0.8;
+    --glass-border: 220 14% 95% / 0.1;
 
     --radius: 0.5rem;
 
