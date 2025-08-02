@@ -10,6 +10,8 @@ import OrderExecution from "./pages/OrderExecution";
 import Portfolio from "./pages/Portfolio";
 import Charts from "./pages/Charts";
 import News from "./pages/News";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +36,8 @@ const App = () => (
               <Route path="/charts" element={<Charts />} />
               <Route path="/reports" element={<Charts />} />
               <Route path="/news" element={<News />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </MainLayout>
