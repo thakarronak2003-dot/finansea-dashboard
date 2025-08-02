@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
 import { MainLayout } from "./components/layout/MainLayout";
 import Dashboard from "./pages/Dashboard";
+import RequireAuth  from "../services/RequireAuth"
 import OrderExecution from "./pages/OrderExecution";
 import Portfolio from "./pages/Portfolio";
 import Charts from "./pages/Charts";
@@ -35,17 +36,19 @@ const App = () => (
             
             {/* App routes with layout */}
             <Route path="/*" element={
-              <MainLayout>
-                <Routes>
-                  <Route path="/" element={<Dashboard />} />
-                  <Route path="/orders" element={<OrderExecution />} />
-                  <Route path="/portfolio" element={<Portfolio />} />
-                  <Route path="/charts" element={<Charts />} />
-                  <Route path="/reports" element={<Charts />} />
-                  <Route path="/news" element={<News />} />
-                  <Route path="*" element={<NotFound />} />
-                </Routes>
-              </MainLayout>
+              <RequireAuth>
+                <MainLayout>
+                  <Routes>
+                    <Route path="/" element={<Dashboard />} />
+                    <Route path="/orders" element={<OrderExecution />} />
+                    <Route path="/portfolio" element={<Portfolio />} />
+                    <Route path="/charts" element={<Charts />} />
+                    <Route path="/reports" element={<Charts />} />
+                    <Route path="/news" element={<News />} />
+                    <Route path="*" element={<NotFound />} />
+                  </Routes>
+                </MainLayout>
+              </RequireAuth>
             } />
           </Routes>
         </BrowserRouter>
