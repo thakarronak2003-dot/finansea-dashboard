@@ -18,10 +18,12 @@ export default function Register() {
         {/* Logo/Brand */}
         <div className="text-center space-y-2">
           <div className="flex items-center justify-center gap-2">
-            <TrendingUp className="h-8 w-8 text-primary" />
-            <h1 className="text-2xl font-bold text-foreground">FinanSea</h1>
+            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-lg">F</span>
+            </div>
+            <h1 className="text-2xl font-bold text-primary">FinanSea</h1>
           </div>
-          <p className="text-muted-foreground">Professional Trading Platform</p>
+          <p className="text-muted-foreground">Trading Platform</p>
         </div>
 
         <Card className="border-border/50 shadow-lg">
