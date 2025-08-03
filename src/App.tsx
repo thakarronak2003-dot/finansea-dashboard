@@ -8,6 +8,7 @@ import { MainLayout } from "./components/layout/MainLayout";
 import Dashboard from "./pages/Dashboard";
 import OrderExecution from "./pages/OrderExecution";
 import Portfolio from "./pages/Portfolio";
+import Wallet from "./pages/Wallet";
 import Charts from "./pages/Charts";
 import SimulatedTrading from "./pages/SimulatedTrading";
 import News from "./pages/News";
@@ -41,6 +42,7 @@ const App = () => (
                   <Route path="/" element={<Dashboard />} />
                   <Route path="/orders" element={<OrderExecution />} />
                   <Route path="/portfolio" element={<Portfolio />} />
+                  <Route path="/wallet" element={<Wallet />} />
                   <Route path="/charts" element={<Charts />} />
                   <Route path="/reports" element={<SimulatedTrading />} />
                   <Route path="/news" element={<News />} />

@@ -6,6 +6,7 @@ import {
   Briefcase,
   FileText,
   Newspaper,
+  Wallet,
 } from "lucide-react";
 import {
   Sidebar,
@@ -34,6 +35,11 @@ const navigationItems = [
     title: "Portfolio",
     url: "/portfolio",
     icon: Briefcase,
+  },
+  {
+    title: "Wallet",
+    url: "/wallet",
+    icon: Wallet,
   },
   {
     title: "Charts & Analysis",
