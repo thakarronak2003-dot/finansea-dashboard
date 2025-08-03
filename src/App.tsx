@@ -9,6 +9,7 @@ import Dashboard from "./pages/Dashboard";
 import OrderExecution from "./pages/OrderExecution";
 import Portfolio from "./pages/Portfolio";
 import Charts from "./pages/Charts";
+import SimulatedTrading from "./pages/SimulatedTrading";
 import News from "./pages/News";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -41,7 +42,7 @@ const App = () => (
                   <Route path="/orders" element={<OrderExecution />} />
                   <Route path="/portfolio" element={<Portfolio />} />
                   <Route path="/charts" element={<Charts />} />
-                  <Route path="/reports" element={<Charts />} />
+                  <Route path="/reports" element={<SimulatedTrading />} />
                   <Route path="/news" element={<News />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
